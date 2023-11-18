@@ -1,7 +1,7 @@
 <h1>
 Simple carousel 🎠
 </h1>
-<img src="assets/screenshot.png"/>
+<img src="assets/Screenshot.png"/>
 
 ## 📕 About
 **Carousel** a simple for your project.
