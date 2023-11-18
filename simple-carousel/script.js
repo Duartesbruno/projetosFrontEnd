@@ -4,6 +4,7 @@ let current = 0
 const currentImg = document.getElementById('currentImg')
 const slideNext = document.getElementById('slide-next')
 const slideBack = document.getElementById('slide-back')
+let roll = true
 
 for(let i=0; i < imagens.length; i++) {
   const div = document.createElement('div')
@@ -16,17 +17,20 @@ const newDivs = document.querySelectorAll('.dots div')
 for(let i=0; i < newDivs.length; i++) {
   newDivs[i].addEventListener('click', ()=> {
     current = newDivs[i].id
+    roll = false
     slide()
   })
 }
 
 slideBack.addEventListener('click', ()=> {
   current--
+  roll = false
   slide()
 })
 
 slideNext.addEventListener('click', ()=> {
   current++
+  roll = false
   slide()
 })
 
@@ -60,8 +64,12 @@ function slide() {
   document.getElementById(current).classList.add('active-dot')
 }
 setInterval( ()=>{
-  current++
-  slide()
+  if(roll) {
+    current++
+    slide()
+  } else {
+    roll = true
+  }
 }, 4000)
 slide()
 
