@@ -5,7 +5,7 @@ Social Media 📱
 
 ## 📕 About
 
-**Social media** buttons for your project.
+**Social media** buttons for your project using only HTML and CSS.
 
 ## 💻Test the project
 [Social Media - Vercel](https://social-media-dun-two.vercel.app/)
