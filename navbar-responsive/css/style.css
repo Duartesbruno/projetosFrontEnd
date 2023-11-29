@@ -25,14 +25,30 @@
 }
 
 .nav-menu a {
+  padding: 
+  8px;
   text-decoration: none;
   color: #fff; 
 }
 
+.nav-menu a:hover {
+  background-color: #f4f4f459;
+  border-radius: 69%;
+  transition: .25s ease;
+}
+
+.logo {
+  padding: 5px;
+}
+
+.logo:hover {
+  background-color: #f4f4f459;
+  transition: .25s ease;
+}
+
 .logo img {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
+  width: 35px;
+  height: 35px;
 }
 
 .menu-hamburguer {
