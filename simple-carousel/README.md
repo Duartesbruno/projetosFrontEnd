@@ -1,5 +1,5 @@
 <h1>
-Simple carousel 🎠
+Simple Carousel 🎠
 </h1>
 <img src="assets/Screenshot.png"/>
 
